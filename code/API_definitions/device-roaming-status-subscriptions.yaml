@@ -167,14 +167,14 @@ servers:
         default: http://localhost:9091
         description: API root, defined by the service provider, e.g. `api.example.com` or `api.example.com/somepath`
 tags:
-  - name: Device roaming status subscription
+  - name: Device Roaming Status Subscription
     description: Operation to manage event subscription on device roaming status event.
 
 paths:
   /subscriptions:
     post:
       tags:
-        - Device roaming status subscription
+        - Device Roaming Status Subscription
       summary: "Create a device roaming status event subscription for a device"
       description: Create a device roaming status event subscription for a device
       operationId: createDeviceRoamingStatusSubscription
@@ -286,7 +286,7 @@ paths:
 
     get:
       tags:
-        - Device roaming status subscription
+        - Device Roaming Status Subscription
       summary: "Retrieve a list of device roaming status event subscription"
       description: Retrieve a list of device roaming status event subscription(s)
       operationId: retrieveDeviceRoamingStatusSubscriptionList
@@ -328,7 +328,7 @@ paths:
   /subscriptions/{subscriptionId}:
     get:
       tags:
-        - Device roaming status subscription
+        - Device Roaming Status Subscription
       summary: "Retrieve a roaming status event subscription for a device"
       description: retrieve device roaming status subscription information for a given subscription.
       operationId: retrieveDeviceRoamingStatusSubscription
@@ -368,7 +368,7 @@ paths:
 
     delete:
       tags:
-        - Device roaming status subscription
+        - Device Roaming Status Subscription
       summary: "Delete a device-roaming-status event subscription for a device"
       operationId: deleteDeviceRoamingStatusSubscription
       description: Delete a given device-roaming-status subscription by ID
